@@ -95,6 +95,10 @@ The backend address is chosen by the run command or the EAS build profile, never
 
 Every screen was compared frame by frame against the Figma design (about 50 frames across onboarding, home, stations, scan and swap, dues, profile) and the result recorded as Match / Intended difference / Fixed / Gap, so product and engineering agreed on exactly what shipped.
 
+## How I work on it
+
+Contract first, then a test at every layer that can run without the real server, then a device run, then a frame-by-frame design comparison, then a written list of what was and was not verified live. The details, including the bugs that bit and what changed because of them, are in [`docs/quality.md`](docs/quality.md).
+
 ## Stack
 
 React Native 0.86, Expo SDK 57, React 19, React Navigation, zustand, expo-secure-store, expo-camera, expo-location, expo-notifications, expo-file-system, `node --test`, EAS Build.
